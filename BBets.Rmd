@@ -80,11 +80,29 @@ favstats(sorted_brownlow)
 ```
 
 The mean income is approximately 282, with a 95% confidence interval ranging from 212 (two standard deviations below the mean) to 352 (two standard deviations above the mean). This implies that we are 95% confident that the true income falls within this interval, indicating a reasonable level of certainty in our estimate.
+
+
 # What are the fair odds? Use manipulation of odds in the function to tune Brownlows earnings to zero. 
 
 
 <!--Decide on your methods:  In this section explain the approach you will take to attack the issue --- how will you decide on a likely estimate of professor Brownlow's earnings or losses after 637 bets. Also explain how you construct a 95% confidence interval about your estimate of his winnings !-->
 
+```{r}
+b_low <- array(100)
+for (i in 1:100) {
+  b_low[i] <- BrLw(odds=4.368)
+}
+
+```
+```{r}
+sorted_b_low<- sort(b_low)
+plot(sorted_b_low, type = "l", xlab = "Index", ylab = "Value",
+     main = "Line Plot of Brownlow Numerical Vector")
+```
+
+```{r}
+favstats(b_low)
+```
 
 
 
@@ -92,9 +110,21 @@ The mean income is approximately 282, with a 95% confidence interval ranging fro
 
 <!--Explain and display the results of your method of coming up with the estimate of professor Brownlows betting profits!-->
 
+```{r}
+fair_low <- array(40)
+for (i in 1:40) {
+  fair_low[i] <- BrLw(numClass = 28)
+}
 
-
-
+```
+```{r}
+sorted_fair_low<- sort(b_low)
+plot(sorted_fair_low, type = "l", xlab = "Index", ylab = "Value",
+     main = "Line Plot of Brownlow Numerical Vector")
+```
+```{r}
+favstats(fair_low)
+```
 
 
 
