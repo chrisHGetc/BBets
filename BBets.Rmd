@@ -104,7 +104,7 @@ plot(sorted_b_low, type = "l", xlab = "Index", ylab = "Value",
 favstats(b_low)
 ```
 
-The estimated mean income is approximately -0.39632, and we have calculated a 95% confidence interval around this estimate. The lower bound of the confidence interval is -70.39632 (equivalent to two standard deviations below the mean), while the upper bound is 69.60368 (two standard deviations above the mean). With a 95% confidence level, we are reasonably certain that the true income value lies within this interval. This statistical analysis provides a reliable estimation of the income parameter, instilling confidence in the accuracy of our findings.
+To achieve zero earnings for Professor Brownlow, we need to manipulate the odds. In this case, the approximate odds are set to 4.368, so we can adjust them using a function to bring them closer to 0, resulting in balanced earnings. The estimated mean income is approximately -0.39632, and we have calculated a 95% confidence interval around this estimate. The lower bound of the confidence interval is -70.39632 (equivalent to two standard deviations below the mean), while the upper bound is 69.60368 (two standard deviations above the mean). With a 95% confidence level, we are reasonably certain that the true income value lies within this interval. This statistical analysis provides a reliable estimation of the income parameter, instilling confidence in the accuracy of our findings.
 
 
 # What size of class makes the 2:1 bet fair?  Use manipulation of number of Students to tune Brownlows earnings to zero.
@@ -126,7 +126,8 @@ plot(sorted_fair_low, type = "l", xlab = "Index", ylab = "Value",
 ```{r}
 favstats(fair_low)
 ```
-Based on our analysis, the mean income is estimated to be approximately -40.175. To provide a level of certainty around this estimate, we have calculated a 95% confidence interval. The lower bound of the interval is -110.175 (equivalent to two standard deviations below the mean), while the upper bound is 29.825 (two standard deviations above the mean). With a 95% confidence level, we can assert with reasonable confidence that the true income value lies within this interval. This statistical assessment underscores the reliability of our estimate and the degree of certainty surrounding the mean income value.
+
+To make the 2:1 bet fair for Professor Brownlow, we need to manipulate the number of students in his class. Setting the number of students to 28 appears to yield the best results for achieving zero earnings. With 28 students, the odds and payout structure can be adjusted in such a way that Professor Brownlow's earnings balance out at zero, making the 2:1 bet fair for both him and the students.Based on our analysis, the mean income is estimated to be approximately -40.175. To provide a level of certainty around this estimate, we have calculated a 95% confidence interval. The lower bound of the interval is -110.175 (equivalent to two standard deviations below the mean), while the upper bound is 29.825 (two standard deviations above the mean). With a 95% confidence level, we can assert with reasonable confidence that the true income value lies within this interval. This statistical assessment underscores the reliability of our estimate and the degree of certainty surrounding the mean income value.
 
 
 
@@ -134,5 +135,6 @@ Based on our analysis, the mean income is estimated to be approximately -40.175.
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If professor Brownlow is consistantly making or losing money how could he change his payout so that his profits center on zero?  Also discuss what size his class should be in order to have his current scheme balance at zero profit.!-->
-Professor Brownlow's mean income is approximately 282, with a 95% confidence interval ranging from 212 to 352. To achieve a zero-profit balance, he could adjust his payout strategy by decreasing it when the mean income is above zero and increasing it when it's below zero. The ideal class size for this balanced outcome depends on factors like income standard deviation and student performance distribution. Generally, a larger class size may provide more stability in income outcome, while smaller class sizes could be more volatile. Further analysis and data are needed to determine the optimal class size and specific adjustments to attain the desired financial outcome.
+
+In conclusion, Professor Brownlow can attain a balanced earnings outcome by adjusting his payout structure through the manipulation of odds. Currently set at 4.368, these odds can be fine-tuned to achieve a profit of zero within two standard deviations above and below the mean income. Moreover, to ensure fairness in the 2:1 bet scenario, a class size of 28 students seems to be the ideal choice for achieving zero earnings in his existing scheme. By implementing these adjustments, Professor Brownlow can establish a more equitable and financially balanced environment for both himself and his students. 
 
